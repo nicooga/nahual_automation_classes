@@ -143,3 +143,65 @@ De esta forma nuestra función se vuelve exponencialmente más rápida:
 for n in range(1, 100):
   print(fibb(n))
 ```
+
+---
+
+# Python: argumentos de linea de comando
+
+---
+
+Los argumentos de linea de comando permiten especificar parametros según los cuales va a correr nuestro programa, 
+de la misma forma en que una funcion puede opcionalmente tomar parámetros.
+
+---
+
+Ésta es una funcionalidad común a muchos lenguages de scripting, no solo Python.
+
+---
+
+Cuando ejecutamos nuestro programa usando el comando `python` desde linea de comando, podemos pasar adicionalmente cualquier número de parametros que queramos:
+
+```bash
+$ python programa.py argumento1 argumento2
+```
+
+---
+
+Los argumentos se harán disponibles a nuestro programa a traves de `sys.argv`
+
+```python
+# programa.py
+import sys
+print('Los argumentos que me diste son:', sys.argv)
+```
+
+### Casos de uso
+
+Los argumentos de linea de comando nos permiten facilmente proveer parametros a nuestro programa.
+
+---
+
+Por ejemplo, supongamos que escribimos un programa que calcula el area de un círculo:
+
+```python
+import sys
+from math import pi
+
+def circle_area(radius):
+  return pi * radius ** 2
+
+r = int(sys.argv[1])
+print(f"El área de un círculo de {r} cm de radio es {circle_area(r)} cm^2" )
+```
+
+---
+
+Ahora podemos facilmente saber el área de cualquier círculo:
+
+```bash
+$ python circle_area.py 1099
+# El área de un círculo de 1099 cm radio es 3794418.7485984056 cm^2
+
+$ python circle_area.py 10991923
+# El área de un círculo de 10991923 cm radio es 379574673870376.44 cm^2
+```
