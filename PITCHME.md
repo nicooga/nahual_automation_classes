@@ -82,6 +82,8 @@ for key in dict_b:
 
 Los diccionarios son colecciones, y constituyen un bloque de construcción básico con el que podemos contar a la hora de programar.
 
+---
+
 ##### Memoizing
 
 Un ejemplo claro y bastante común del uso de un diccionario en todos los lenguajes es el memoizing.
