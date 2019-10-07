@@ -1,12 +1,6 @@
 # Python: diccionarios
 
-```python
-{}
-```
-
 ---
-
-### Python: diccionarios
 
 El diccionario es una estructura de datos, que relaciona claves con valores (key/values).
 
@@ -19,7 +13,6 @@ También conocidos como:
 
 ---
 
-### Python: diccionarios
 #### Características
 
 - las claves son únicas, no se pueden repetir
@@ -28,7 +21,6 @@ También conocidos como:
 
 ---
 
-### Python: diccionarios
 #### Operaciones. Que podemos hacer con un diccionario?
 
 ##### Creación
@@ -71,7 +63,6 @@ for key in dict_b:
 
 ---
 
-### Python: diccionarios
 #### Casos de uso
 
 Los diccionarios son colecciones, y constituyen un bloque de construcción básico con el que podemos contar a la hora de programar.
