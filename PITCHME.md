@@ -1,4 +1,4 @@
-# Python: diccionarios
+### Python: diccionarios
 
 El diccionario es una estructura de datos, que relaciona claves con valores (key/values).
 
