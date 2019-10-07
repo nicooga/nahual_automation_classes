@@ -23,23 +23,38 @@ También conocidos como:
 
 #### Operaciones. Que podemos hacer con un diccionario?
 
+---
+
 ##### Creación
 
 ```python
-dict_a = {} # creamos un diccionario vacío
-dict_b = { 'clave': 'valor', 1: 2, 'Argentina': 'Buenos Aires', 'Lima': 'Peru', 'Chile': 'Santiago de Chile' } # creamos un diccionario con algunos valores
+# creamos un diccionario vacío
+dict_a = {}
+
+# creamos un diccionario con algunos valores
+dict_b = { 'clave': 'valor', 1: 2, 'Argentina': 'Buenos Aires', 'Lima': 'Peru', 'Chile': 'Santiago de Chile' }
 ```
+
+---
 
 ##### Seteo de valores
 
+Para setear valores usanmos el operador especial `diccionario[...]=`
+
 ```python
-dict_b['otra_clave'] = True # seteamos el valor de la clave '`otra_clave`' para que apunte al valor `True`
+# seteamos el valor de la clave '`otra_clave`' para que apunte al valor `True`
+dict_b['otra_clave'] = True
 ```
+
+---
 
 ##### Búsqueda de valores
 
+Para buscar valores usanmos el operador especial `diccionario[...]`
+
 ```python
-dict_b['clave'] # le preguntamos al diccionario cual es el valor que le corresnde a la clave `'clave'`
+# le preguntamos al diccionario cual es el valor que le corresnde a la clave `'clave'`
+dict_b['clave']
 # => 'valor'
 ```
 
@@ -47,7 +62,7 @@ dict_b['clave'] # le preguntamos al diccionario cual es el valor que le corresnd
 
 ##### Iteración
 
-Tal vez lo mas interesante y util de un diccionario: el hecho de que es una colección y podemos iterar sobre sus valores de forma sequencial:
+Tal vez lo mas interesante y util de un diccionario: el hecho de que es una colección y podemos iterar sobre sus valores de forma sequencial.
 
 ```python
 for key in dict_b:
@@ -104,17 +119,19 @@ Pero pasando el 30º (treintaavo) número se vuelve muy lenta la ejecución, por
 Con la ayuda de un diccionario podemos memorizar el resultado de `fibb(n)` para cada valor de `n`:
 
 ```python
-cache = {} # Un diccionario donde vamos a almacenar los 
+cache = {} # Un diccionario donde vamos a almacenar los resultados
 
 def fibb(n):
-  # si el resultado no esta "cacheado", lo calculamos y lo guardamos en el cache
+  # si el resultado no esta "cacheado",
+  # lo calculamos y lo guardamos en el cache
   if not n in cache:
     if n == 0 or n === 1:
       cache[n] = n
     else:
       cache[n] = fibb(n - 1) + fibb(n - 2)
 
-  # finalmente devolvemos el valor que si o si va a estar cacheado para cuando se ejecute esta linea de código
+  # finalmente devolvemos el valor que si o si
+  # va a estar cacheado para cuando se ejecute esta linea de código
   return cache[n]
 ```
 
