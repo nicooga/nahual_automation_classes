@@ -177,6 +177,8 @@ import sys
 print('Los argumentos que me diste son:', sys.argv)
 ```
 
+---
+
 ### Casos de uso
 
 Los argumentos de linea de comando nos permiten facilmente proveer parametros a nuestro programa.
