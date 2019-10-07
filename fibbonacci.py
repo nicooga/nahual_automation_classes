@@ -15,7 +15,3 @@ def memoized_fibb(n):
             cache[n] = memoized_fibb(n-1) + memoized_fibb(n-2)
 
     return cache[n]
-
-# Imprimo los primeros 100 números de la serie de Fibbonacci
-for n in range(0, 100):
-    print(n, fibb(n))

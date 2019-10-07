@@ -152,7 +152,7 @@ for n in range(1, 100):
 
 ---
 
-Los argumentos de linea de comando permiten especificar parametros según los cuales va a correr nuestro programa, 
+Los argumentos de linea de comando permiten especificar parametros según los cuales va a correr nuestro programa,
 de la misma forma en que una funcion puede opcionalmente tomar parámetros.
 
 ---
@@ -207,3 +207,39 @@ $ python circle_area.py 1099
 $ python circle_area.py 10991923
 # El área de un círculo de 10991923 cm radio es 379574673870376.44 cm^2
 ```
+
+---
+
+Otro ejemplo, volviendo a la serie de Fibbonacci:
+
+```python
+# Supongamos que importo la función `fibb` desde otro archivo..
+
+import sys
+import fibbonacci
+
+# Otra vez, convierto la string a entero
+max_number = int(sys.argv[1])
+
+# Imprimo los primeros 100 números de la serie de Fibbonacci
+for n in range(0, max_number):
+    print(n, fibbonacci.memoized_fibb(n))
+```
+
+---
+
+Ahora tengo un programa que me imprime los primeros `n` números de la serie de Fibbonacci:
+
+```bash
+$ python fibbonacci2.py 100
+# Imprime:
+# 0 0
+# 1 1
+# 2 1
+# 3 2
+# 4 3
+# 5 5
+# 6 8
+# 7 13
+# 8 21
+# ...
