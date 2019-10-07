@@ -51,6 +51,8 @@ dict_b['clave'] # le preguntamos al diccionario cual es el valor que le corresnd
 # => 'valor'
 ```
 
+---
+
 ##### Iteración
 
 Tal vez lo mas interesante y util de un diccionario: el hecho de que es una colección y podemos iterar sobre sus valores de forma sequencial:
@@ -77,6 +79,10 @@ Los diccionarios son colecciones, y constituyen un bloque de construcción bási
 ##### Memoizing
 
 Un ejemplo claro y bastante común del uso de un diccionario en todos los lenguajes es el memoizing.
+
+---
+
+
 El memoizing consisite en recordar el resultado de una función según el valor del argumento, de forma que nos nos ahorremos volver a calcular el resultado de la función la segunda vez nos pidan un valor.
 
 ---
@@ -90,6 +96,8 @@ def fibb(n):
   else:
     return fibb(n - 1) + fibb(n - 2)
 ```
+
+---
 
 Usando esta función podemos imprimir todos los números de la serie de Fibbonacci de forma sequencial:
 
@@ -118,6 +126,8 @@ def fibb(n):
   # finalmente devolvemos el valor que si o si va a estar cacheado para cuando se ejecute esta linea de código
   return cache[n]
 ```
+
+---
 
 De esta forma nuestra función se vuelve exponencialmente más rápida:
 
