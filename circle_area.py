@@ -9,4 +9,7 @@ def circle_area(radius):
 # matemáticas primero lo convertimos en un entero
 r = int(sys.argv[1])
 
-print(f"El área de un círculo de {r} cm de radio es {circle_area(r)} cm^2" )
+print(f"\
+El área de un círculo de {r} cm de radio \
+es {circle_area(r)} cm^2\
+")
